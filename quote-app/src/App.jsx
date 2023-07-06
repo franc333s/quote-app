@@ -1,12 +1,26 @@
-import './scss/global.scss'
+import { Routes, Route } from "react-router-dom";
+import Footer from "./components/footer/Footer";
+import Topbar from "./components/topbar/Topbar";
+import About from "./views/About";
+import Home from "./views/Home";
+
 
 function App() {
 
   return (
     <>
-            <img src='/quote-app.png' alt='QuoteApp' />
-            <h1>QuoteApp</h1>
-            <p>This is App.jsx</p>
+        <header>
+            <Topbar />
+        </header>
+
+        <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/about' element={<About />} />
+        </Routes>
+
+        <footer>
+            <Footer />
+        </footer>
     </>
   )
 }
