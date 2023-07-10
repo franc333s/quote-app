@@ -1,5 +1,9 @@
+@import '../../scss/sass-variables';
 
 
 .footer {
-    background-color: blue;
+    color: $color-blue-theme-1; 
+    background-color: $color-bg-off-white-theme-1;
+    font-size: 4rem;
+    text-transform: uppercase;
 }

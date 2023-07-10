@@ -1,12 +1,13 @@
+import Quotes from '../components/quotes/Quotes';
 
 
 function Home() {
 
     return (
       <>
-              <img src='/quote-app.png' alt='QuoteApp' />
-              <h1>QuoteApp</h1>
-              <p>This is Home.jsx</p>
+        <main className='main'>
+            <Quotes />
+        </main>
       </>
     )
   }
