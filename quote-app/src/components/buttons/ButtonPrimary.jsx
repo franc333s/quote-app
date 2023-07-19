@@ -1,14 +1,12 @@
 import { Link } from "react-router-dom";
 
+import './Buttons.scss'
 
-
-const ButtonPrimary = ({ to, text, openInNewTab }) => {
-	
-	const linkProps = openInNewTab ? { target: '_blank', rel: 'noopener noreferrer' } : {};
+const ButtonPrimary = ({ to, text, onClick }) => {
 	
 	return (
 		<>
-            <Link className="" to={to} {...linkProps}>{text}</Link>
+            <Link className='btn btn--primary' to={to} onClick={onClick}>{text}</Link>
         </>
 
 	);

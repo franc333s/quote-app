@@ -1,5 +1,4 @@
 
-
 .quote-app {
     display: flex;
     flex-direction: column;
@@ -22,12 +21,33 @@
 
 .about-sect {
     padding-top: $horizontal-padding-base;
+    flex: 1;
+
+    @include mq($bp-medium) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: $vertical-padding-base;
+    }
 
     &__img {
-        width: 100%;
+        background-image: url('/img/yellow-stairs-marina.webp');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        height: 70vh;
+
+        @include mq($bp-medium) {
+            height: auto;
+        }
+    }
+
+    &__desc {
+        padding-top: 2rem;
+
+        @include mq($bp-medium) {
+            padding-top: 0;
+        }
     }
 }
-
-
 
 

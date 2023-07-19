@@ -1,0 +1,57 @@
+@import '../../scss/sass-variables';
+@import '../../scss/mixins';
+
+
+.section-quote {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4.8rem;
+
+    &__element {
+        font-size: $font-size-base;
+        color: $color-blue-theme-1;
+        text-transform: uppercase;
+        text-align: center;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.2rem;
+    }
+
+    &__btn {
+        transform: rotate(-10deg);
+
+        transition: $transition-main;
+
+        &:focus,
+        &:active {
+
+            @include mq($bp-lowermedium) {
+                transform: rotate(-10deg);
+            }
+        }
+
+        &:hover {
+            transform: rotate(0deg);
+        }
+    }
+}
+
+.theme-2 .section-quote__element {
+    color: $color-blue-theme-2;
+}
+
+.theme-3 .section-quote__element {
+    color: $color-salmon-theme-3;
+}
+
+.theme-4 .section-quote__element {
+    color: $color-yellow-theme-4;
+}
+
+.theme-5 .section-quote__element {
+    color: $color-white-theme-5;
+}

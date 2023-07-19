@@ -6,7 +6,7 @@ function Topbar() {
     return (
         <>
             <div className='topbar'>
-                <Link to='/'>QuoteApp</Link>
+                <Link to='/' className='btn--effect'>QuoteApp</Link>
                 <Link to='/about'>About</Link>
             </div>
         </>

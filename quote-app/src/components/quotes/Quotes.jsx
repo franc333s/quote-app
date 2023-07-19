@@ -1,4 +1,7 @@
 import { useState, useEffect } from 'react';
+import ButtonPrimary from '../buttons/ButtonPrimary';
+
+import './Quotes.scss';
 
 
 const Quotes = () => {
@@ -34,15 +37,23 @@ const Quotes = () => {
 
     return (
         <>
-            <div>
-                {quote}
-            </div>
-            <div>
-                {author}
+        <section className='section-quote'>
+
+            <div className='section-quote__element'>
+                <div>
+                    "{quote}"
+                </div>
+                <div>
+                    {author}
+                </div>
             </div>
 
-            <button onClick={handleClick}>New Quote</button>
-
+            <div className='section-quote__btn'>
+                <ButtonPrimary text={'New quote'} onClick={handleClick} />
+            </div>
+            
+        </section>
+        
         </>
     )
 }

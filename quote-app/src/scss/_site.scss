@@ -11,7 +11,29 @@ html {
 body {
     overflow-x: hidden;
     margin: 0;
+    font-family: $font-theme-1;
+    background-color: $color-bg-off-white-theme-1;
+
+    & .theme-2 {
+        background-color: $color-bg-yellow-theme-2;
+    }
+
+    & .theme-3 {
+        background-color: $color-bg-red-theme-3;
+    }
+
+    & .theme-4 {
+        background-color: $color-bg-green-theme-4;
+    }
+
+    & .theme-5 {
+        background-color: $color-bg-black-theme-5;
+    }
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed:ital@0;1&display=swap');
+
+
 
 @import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');
 
@@ -19,8 +41,7 @@ body {
     font-family: 'Autopia-Regular';
     src: url('/fonts/Autopia-Regular.woff') format('woff'), 
          url('/fonts/Autopia-Regular.woff2') format('woff2'); 
-    }
-
+}
 
 
 

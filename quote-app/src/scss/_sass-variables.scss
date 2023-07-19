@@ -1,7 +1,8 @@
+// REVISAR ESTO
+$font-theme-1: 'Sofia Sans Extra Condensed';
 
-
-
-
+$font-size-base: clamp(3.2rem, 1.18vw + 2.74rem, 5rem);
+$font-size-medium: clamp(3.2rem, 1.18vw + 2.74rem, 5rem);
 
 
 
@@ -12,9 +13,6 @@ $color-blue-theme-1: #5DB7DE;
 $color-blue-light-theme-1: #E2F1F8;
 $color-red-theme-1: #F5463D;
 $color-off-white-theme-1: #F5F5F5;
-
-$font-theme-1: 'Arial Narrow';
-
 // Applications
 $color-bg-blue-theme-1: $color-blue-theme-1;
 $color-bg-blue-light-theme-1: $color-blue-light-theme-1;
@@ -23,11 +21,55 @@ $color-bg-off-white-theme-1: $color-off-white-theme-1;
 
 
 // Theme 2
+$color-blue-theme-2: #6D7FF4;
+$color-yellow-theme-2: #FED854;
+$color-off-white-theme-2: #F5F5F5;
+// Applications
+$color-bg-blue-theme-2: $color-blue-theme-2;
+$color-bg-yellow-theme-2: $color-yellow-theme-2;
+$color-bg-off-white-theme-2: $color-off-white-theme-2;
+
+
+// Theme 3
+$color-salmon-theme-3: #FED3D3;
+$color-red-theme-3: #F5463D;
+$color-black-theme-3: #111111;
+// Applications
+$color-bg-salmon-theme-3: $color-salmon-theme-3;
+$color-bg-red-theme-3: $color-red-theme-3;
+$color-bg-black-theme-3: $color-black-theme-3;
 
 
 
+// Theme 4
+$color-yellow-theme-4: #FED854;
+$color-violet-theme-4: #DB90F5;
+$color-green-theme-4: #183E07;
+$color-black-theme-4: #111111;
+// Applications
+$color-bg-yellow-theme-4: $color-yellow-theme-4;
+$color-bg-violet-theme-4: $color-violet-theme-4;
+$color-bg-green-theme-4: $color-green-theme-4;
+$color-bg-black-theme-4: $color-black-theme-4;
 
 
+
+// Theme 5
+$color-green-theme-5: #8DE658;
+$color-green-light-theme-5: #E3FEDA;
+$color-black-theme-5: #16041C;
+$color-white-theme-5: #FBFBFA;
+// Applications
+$color-bg-green-theme-5: $color-green-theme-5;
+$color-bg-green-light-theme-5: $color-green-light-theme-5;
+$color-bg-black-theme-5: $color-black-theme-5;
+$color-bg-white-theme-5: $color-white-theme-5;
+
+
+
+// Buttons
+$font-size-button: 2.8rem;
+$font-size-button-small: 2.4rem;
 
 $font-first: 'Nabla';
 $font-third: 'Autopia-Regular';
@@ -45,3 +87,14 @@ $bp-uppermedium: 60rem; // 960px
 $bp-lowerlarge: 75rem; // 1216px
 $bp-large: 90rem; // 1440px
 $bp-xlarge: 120rem; // 1920px
+
+
+// Margins
+
+$vertical-padding-base: clamp(2rem, 1.31vw + 1.49rem, 4rem);
+$horizontal-padding-base: clamp(2rem, 1.31vw + 1.49rem, 4rem);
+
+
+// Effects
+
+$transition-main: 0.4s all ease-in-out;

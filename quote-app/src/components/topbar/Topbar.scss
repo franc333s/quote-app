@@ -1,21 +1,86 @@
 @import '../../scss/sass-variables';
-
-
+@import '../../scss/mixins';
 
 .topbar {
     color: $color-blue-theme-1; 
-    background-color: $color-bg-off-white-theme-1;
-    font-size: 4rem;
+    font-size: $font-size-base;
     text-transform: uppercase;
-
+    padding-top: $horizontal-padding-base;
     display: flex;
     justify-content: space-between;
-
-    padding: 2rem;
 
     & a {
         color: inherit;
         text-decoration: none;
         font-style: italic;
+        line-height: 85%;
+
+        &:hover {
+
+            @include mq($bp-lowermedium) {
+                color: transparent;
+                -webkit-text-stroke: .2rem $color-bg-blue-theme-1;
+            }
+        }
+    }
+}
+
+.theme-2 .topbar {
+    color: $color-blue-theme-2;
+
+    & a {
+
+        &:hover {
+
+            @include mq($bp-lowermedium) {
+                color: transparent;
+                -webkit-text-stroke: .2rem $color-bg-blue-theme-2;
+            }
+        }
+    }
+}
+
+.theme-3 .topbar {
+    color: $color-salmon-theme-3;
+
+    & a {
+
+        &:hover {
+
+            @include mq($bp-lowermedium) {
+                color: transparent;
+                -webkit-text-stroke: .2rem $color-bg-salmon-theme-3;
+            }
+        }
+    }
+}
+
+.theme-4 .topbar {
+    color: $color-yellow-theme-4;
+
+    & a {
+
+        &:hover {
+
+            @include mq($bp-lowermedium) {
+                color: transparent;
+                -webkit-text-stroke: .2rem $color-bg-yellow-theme-4;
+            }
+        }
+    }
+}
+
+.theme-5 .topbar {
+    color: $color-white-theme-5;
+
+    & a {
+
+        &:hover {
+
+            @include mq($bp-lowermedium) {
+                color: transparent;
+                -webkit-text-stroke: .2rem $color-bg-white-theme-5;
+            }
+        }
     }
 }

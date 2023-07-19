@@ -1,5 +1,36 @@
 
 
-body {
-    font-family: $font-theme-1;
+.about-sect__desc__text {
+    color: $color-blue-theme-1;
+    font-size: clamp(3.6rem, 2.88vw + 2.48rem, 8rem);
+
+    & a {
+        color: inherit;
+    }
+
+    & + & {
+        padding-top: 2.8rem;
+    }
+
+    &--highlight {
+        text-decoration: underline;
+    }
+}
+
+
+
+.theme-2 .about-sect__desc__text {
+    color: $color-blue-theme-2;
+}
+
+.theme-3 .about-sect__desc__text {
+    color: $color-salmon-theme-3;
+}
+
+.theme-4 .about-sect__desc__text {
+    color: $color-yellow-theme-4;
+}
+
+.theme-5 .about-sect__desc__text {
+    color: $color-white-theme-5;
 }

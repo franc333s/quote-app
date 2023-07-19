@@ -5,7 +5,7 @@ function Home() {
 
     return (
       <>
-        <main className='main'>
+        <main className='quote-app__main'>
             <Quotes />
         </main>
       </>

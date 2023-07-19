@@ -1,0 +1,149 @@
+@import '../../scss/sass-variables';
+@import '../../scss/mixins';
+
+
+button,
+.btn {
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: $transition-main;
+
+    &--primary {
+        padding: .8rem 2.4rem;
+        color: $color-off-white-theme-1;
+        background-color: $color-bg-red-theme-1;
+        font-size: $font-size-button;
+    }
+
+
+    &--secondary {
+        padding: 1.2rem 2rem;
+        color: $color-blue-theme-1;
+        background-color: $color-bg-blue-light-theme-1;
+        font-size: $font-size-button-small;
+
+        &:hover {
+            color: $color-bg-blue-light-theme-1;
+            background-color: $color-blue-theme-1;
+        }
+    }
+
+}
+
+
+.theme-2 {
+
+    & .btn--primary {
+        color: $color-blue-theme-2;
+        background-color: $color-bg-off-white-theme-2;
+        border-radius: 4rem;
+
+        &:hover {
+            color: $color-off-white-theme-2;
+            background-color: $color-bg-blue-theme-2;
+        }
+    }
+
+    & .btn--secondary {
+        color: $color-blue-theme-2;
+        background-color: transparent;
+        border: 2px $color-bg-blue-theme-2 solid;
+        border-radius: 4rem;
+
+        &:hover {
+            color: $color-off-white-theme-2;
+            background-color: $color-bg-blue-theme-2;
+        }
+    }
+}
+
+.theme-3 {
+
+    & .btn--primary,
+    & .btn--secondary {
+        color: $color-red-theme-3;
+        background-color: $color-bg-salmon-theme-3;
+        padding: 1.4rem 3.2rem;
+        border: 2px $color-bg-black-theme-3 solid;
+        border-radius: 50%;
+
+        &:hover {
+            color: $color-salmon-theme-3;
+            background-color: $color-bg-black-theme-3;
+        }
+    }
+
+}
+
+.theme-4 {
+
+    .btn--primary {
+        color: $color-black-theme-4;
+        background-color: $color-bg-violet-theme-4;
+        border-radius: 4rem;
+        
+        &:hover {
+            color: $color-green-theme-4;
+            background-color: $color-bg-yellow-theme-4;
+        }
+    }
+
+    & .btn--secondary {
+        color: $color-violet-theme-4;
+        background-color: $color-bg-black-theme-4;
+
+        &:hover {
+            color: $color-green-theme-4;
+            background-color: $color-bg-yellow-theme-4;
+        }
+    }
+}
+
+.theme-5 {
+
+    & .btn--primary {
+        color: $color-green-theme-5;
+        background-color: transparent;
+        padding: 0rem .8rem;
+        position: relative;
+
+        &:after {
+            content: "";
+            position: absolute;
+            width: 0%;
+            height: .2rem;
+            left: 0;
+            top: calc(50% - .2rem/2);
+            background-color: $color-bg-green-theme-5;
+            transition: 300ms ease-in-out;
+            pointer-events: none;
+        }
+
+        &:hover::after {
+            width: 100%;
+        }
+    }
+
+    & .btn--secondary {
+        color: $color-green-light-theme-5;
+        background-color: transparent;
+        padding: 0rem .8rem;
+        position: relative;
+    
+        &:after {
+            content: "";
+            position: absolute;
+            width: 0%;
+            height: .2rem;
+            left: 0;
+            top: calc(50% - .2rem/2);
+            background-color: $color-bg-green-light-theme-5;
+            transition: 300ms ease-in-out;
+            pointer-events: none;
+        }
+
+        &:hover::after {
+            width: 100%;
+        }
+    }
+}

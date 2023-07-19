@@ -1,9 +1,94 @@
 @import '../../scss/sass-variables';
+@import '../../scss/mixins';
 
 
 .footer {
     color: $color-blue-theme-1; 
-    background-color: $color-bg-off-white-theme-1;
-    font-size: 4rem;
+    font-size: $font-size-base;
     text-transform: uppercase;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-top: $horizontal-padding-base;
+    padding-bottom: $horizontal-padding-base;
+
+    & a {
+        color: inherit;
+        text-decoration: none;
+        font-style: italic;
+        line-height: 85%;
+    }
+
+    &__contact {
+
+        &:hover {
+
+            @include mq($bp-lowermedium) {
+                color: transparent;
+                -webkit-text-stroke: .2rem $color-bg-blue-theme-1;
+            }
+        }
+    }
+}
+
+.theme-2 .footer {
+    color: $color-blue-theme-2;
+
+    &__contact {
+
+        &:hover {
+
+            @include mq($bp-lowermedium) {
+                color: transparent;
+                -webkit-text-stroke: .2rem $color-bg-blue-theme-2;
+            }
+        }
+    }
+}
+
+.theme-3 .footer {
+    color: $color-salmon-theme-3;
+
+    &__contact {
+
+        &:hover {
+
+            @include mq($bp-lowermedium) {
+                color: transparent;
+                -webkit-text-stroke: .2rem $color-bg-salmon-theme-3;
+            }
+        }
+    }
+}
+
+.theme-4 .footer {
+    color: $color-yellow-theme-4;
+
+    &__contact {
+
+        &:hover {
+
+            @include mq($bp-lowermedium) {
+                color: transparent;
+                -webkit-text-stroke: .2rem $color-bg-yellow-theme-4;
+            }
+        }
+    }
+}
+
+.theme-5 .footer {
+    color: $color-white-theme-5;
+
+    &__contact {
+
+        &:hover {
+
+            @include mq($bp-lowermedium) {
+                color: transparent;
+                -webkit-text-stroke: .2rem $color-bg-white-theme-5;
+            }
+        }
+    }
 }
